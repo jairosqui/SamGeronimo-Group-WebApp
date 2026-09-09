@@ -50,7 +50,7 @@ export function Hero() {
           className="relative aspect-[4/5] rounded-md2 overflow-hidden"
         >
           <Image
-            src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?w=1600&q=70&auto=format&fit=crop"
+            src="https://unsplash.com/es/fotos/la-mano-de-la-gente-de-negocios-senala-el-documento-de-negocios-durante-la-discusion-en-la-reunion-YswPmWRYHIw"
             alt="Equipo empresarial diverso colaborando en una oficina moderna"
             fill
             priority
