@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0b;
+  color: #f7f6f4;
+}
+
+::selection {
+  background: #ff6b00;
+  color: #0a0a0b;
+}
+
+.container-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Respect the user's motion preference: collapse all animation/transition
+   durations to near-zero instead of disabling Framer Motion entirely. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
