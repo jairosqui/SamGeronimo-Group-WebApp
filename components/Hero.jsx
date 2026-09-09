@@ -50,8 +50,8 @@ export function Hero() {
           className="relative aspect-[4/5] rounded-md2 overflow-hidden"
         >
           <Image
-            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=70&auto=format&fit=crop"
-            alt="Equipo de estrategia empresarial en una sesión de trabajo"
+            src="https://images.unsplash.com/photo-1758518731706-be5d5230e5a5?w=1600&q=70&auto=format&fit=crop"
+            alt="Equipo empresarial diverso colaborando en una oficina moderna"
             fill
             priority
             sizes="(min-width: 1024px) 45vw, 100vw"
