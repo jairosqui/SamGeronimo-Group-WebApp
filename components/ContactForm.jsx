@@ -51,6 +51,11 @@ export function ContactForm() {
       // 2) Only after verification, submit directly from the browser to the
       // form backend — never proxy this through our own server (see skill notes
       // on Cloudflare blocking server-to-server submissions).
+      // Web3Forms has its own (Pro-only) reCAPTCHA integration that activates
+      // automatically if it sees a "g-recaptcha-response" field. We already
+      // verified the token ourselves above, so strip it before forwarding —
+      // otherwise Web3Forms rejects the submission with a Pro-feature error.
+      formData.delete("g-recaptcha-response");
       formData.append("access_key", WEB3FORMS_ACCESS_KEY);
       formData.append("subject", "Nueva consulta — SamGeronimo Group");
 
