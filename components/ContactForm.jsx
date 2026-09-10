@@ -4,7 +4,7 @@ import { useState } from "react";
 import Script from "next/script";
 import { useLanguage } from "@/context/LanguageContext";
 
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "237bfbbb-39dc-4b99-825c-c4e109df365a";
 const RECAPTCHA_SITE_KEY =
   process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "YOUR_RECAPTCHA_SITE_KEY";
 
